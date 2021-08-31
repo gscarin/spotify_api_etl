@@ -8,14 +8,4 @@ Also using AirFlow to schedule daily process.
 
 _Spotify URL to get api-key_: _https://developer.spotify.com/console/get-recently-played/_
 
-```mermaid
-graph TD
-A[AirFlow DAG] ----> B((Spotify ETL))
-B --> C(Connect API)
-B --> D(Connect Database)
-D --> E(Insert unique songs into database)
-C --> F{Final}
-E --> F{Final}
-
-```
 
